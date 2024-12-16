@@ -6,7 +6,7 @@ body {
 .sidebar {
     width: 17%;
     background-color: #1992D4;
-    height: 100vh;
+    height: 1fr;
     padding-left: 10px;
     padding-top: 12px;
     box-sizing: border-box;
@@ -46,7 +46,7 @@ body {
     margin-bottom: 80px;
 }
 .main {
-    width: 83%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -139,6 +139,7 @@ body {
     display: flex;
     padding-bottom: 20px;
     font-family: 'roboto';
+    gap: 80px;
 }
 
 .projects {
@@ -164,4 +165,99 @@ body {
     border-left: 10px solid gold;
     border-radius: 10px;
     box-shadow: 5px 5px 5px lightgray;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
+.project > .title {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+}
+.project > .para {
+    font-size: 15px;
+    width: 80%;
+    margin-left: 10px;
+    color: #979797;
+}
+.pro-icons {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    margin-right: 10px;
+    margin-top: auto;
+}
+.pro-icons > svg {
+    fill: black;
+    width: 20px;
+    height: 20px;
+}
+
+.side {
+    display: grid;
+    padding: 15px;
+    width: 25%;
+    gap: 20px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements {
+    width: 100%;
+    height: 90%;
+    border: none;
+    background-color: white;
+    box-shadow: 5px 5px 10px lightgray;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.anno {
+    border-bottom: 1px solid black;
+}
+.announcements > .anno:nth-of-type(3) {
+    border: none;
+}
+.anno > .title {
+    font-size: 15px;
+    font-weight: 700;
+}
+.anno > .para {
+    color: #979797;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.trending {
+    width: 100%;
+    height: 90%;
+    border: none;
+    background-color: white;
+    box-shadow: 5px 5px 10px lightgray;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+.trending > .row {
+    display: flex;
+    gap: 20px;
+    color: #979797;
+}
+.row > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.names > .title {
+    color: black;
+}
+
